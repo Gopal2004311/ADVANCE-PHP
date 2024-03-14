@@ -1,0 +1,101 @@
+<!----1) Write Ajax program to fetch suggestions when is user is typing in a textbox.
+(eg like google suggestions.Hint create array of suggestions and matching string will be displayed )-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            height: 400px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background: rgb(220, 227, 230);
+        }
+
+        .form-box {
+            position: absolute;
+            top: 5%;
+            left: 30%;
+            right: 30%;
+            padding: 3%;
+            box-shadow: 1px 1px 7px darkgray;
+            border-radius: 4px;
+            background: rgb(255, 255, 255);
+        }
+
+        .form-box .heading h3 {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: blue;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            border: none;
+        }
+
+        .form-box .content .element label,
+        input {
+            display: block;
+        }
+
+        .form-box .content .element input {
+            width: 100%;
+            height: 30px;
+            outline: none;
+            padding: 3px;
+            margin-bottom: 10px;
+            font-size: 15px;
+            border: 1px solid rgb(5, 5, 100);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-box">
+        <div class="heading">
+            <h3>Ajax Suggestion!!</h3>
+        </div>
+        <div class="content">
+            <form>
+                <div class="element">
+                    <label for="name">Enter name:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="element">
+                    <label for="suggest">Suggestion:</label>
+                    <span id="suggest"></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const input = document.getElementById("name");
+        const suggest = document.getElementById("suggest");
+        const display = () => {
+            var xml = new XMLHttpRequest();
+            xml.onreadystatechange = () => {
+                if (xml.readyState == 4 && xml.status == 200) {
+                    suggest.innerHTML = xml.responseText;
+                }
+            }
+            xml.open("GET", "Q1_AjaxSuggestions.php?input=" + input.value.toUpperCase(), true);
+            xml.send();
+        }
+        input.addEventListener("keyup", display);
+    </script>
+</body>
+
+</html>

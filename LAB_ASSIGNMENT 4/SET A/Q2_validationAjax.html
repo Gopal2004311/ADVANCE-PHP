@@ -1,0 +1,27 @@
+<!----2) Write Ajax program to carry out validation for a username entered in textbox. If the 
+textbox is blank, print ‘Enter username’. If the number of characters is less than three,print’ 
+Username is too short’. If value entered is appropriate the print ‘Valid username’-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Q2_validationAjax.js" defer></script>
+</head>
+
+<body>
+    <h1>Ajax form validation!!</h1>
+    <form method="POST">
+        <label for="username">Enter username:</label>
+        <input type="text" name="name" id="username"><br>
+        <br>
+        <span id="error"></span>
+        <br>
+        <br>
+        <input type="submit" value="submit" id="submit" disabled>
+    </form>
+</body>
+
+</html>

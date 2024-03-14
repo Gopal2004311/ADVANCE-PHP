@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Q1_validationAjax.css">
+    <script src="Q1_validationAjax.js" defer></script>
+</head>
+
+<body>
+    <div class="form-box">
+        <div id="valid">
+            <span id="success"></span>
+        </div>
+        <div class="heading">
+            <h2>Ajax Validation</h2>
+        </div>
+        <div class="for-content">
+            <form>
+                <div class="form-element">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username">
+                    <span id="userError"></span>
+                </div>
+                <div class="form-element">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+                    <span id="passError"></span>
+                </div>
+                <div class="form-element">
+                    <button value="Submit" name="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

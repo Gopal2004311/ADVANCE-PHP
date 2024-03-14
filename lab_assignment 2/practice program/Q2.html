@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input{
+        display: block;
+        width: 100%;
+        outline: none;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        transition: 1s smooth;
+    }
+    legend{
+        text-align: center;
+        align-items: center;
+        font-size: 35px;
+        color: salmon;
+    }
+    fieldset{
+        margin-left: 25%;
+        margin-right: 25%;
+        box-shadow:  5px 5px rgb(59, 55, 55);
+    }
+    input[type="submit"],input[type="reset"]
+    {
+        display: inline-block;
+        width: 25%;
+        cursor: pointer;
+    }
+    input:hover{
+        border: 3px solid lightblue;
+    }
+    #submit{
+        margin-left: 5%;
+    }
+    #submit:hover{
+        color: white;
+        background-color: blue;
+        transition: 1s;
+    }
+    #reset{
+        margin-left: 40%;
+    }
+    #reset:hover{
+        color: white;
+        background-color: red;
+        transition: 1s;
+    }
+
+</style>
+<body>
+    <fieldset>
+        <!--/*2) Write PHP program to accept user details such as user-id, 
+        name, Address, email, and mobile 
+        no. Display same information on next page.*/-->
+        <legend>Student Details!!</legend>
+        <form action="Q2.php" method="POST">
+            <label for="id"><b>Enter your id:</b></label>
+            <input type="number" name="id" id="id"><br>
+            
+            <label for="name"><b>Enter your name:</b></label>
+            <input type="text" name="name" id="name"><br>
+            
+            <label for="adr"><b>Enter your Address:</b></label>
+            <input type="text" name="adr" id="adr"><br>
+            
+            <label for="email"><b>Enter your email:</b></label>
+            <input type="email" name="email" id="email"><br>
+          
+            <label for="mobile"><b>Enter your mobile no.:</b></label>
+            <input type="number" name="mobile" id="mobile"><br>
+           
+            <input type="submit" name="submit" id="submit" value="submit">
+            <input type="reset" value="reset" name="reset" id="reset">
+        </form>
+    </fieldset>
+</body>
+
+</html>

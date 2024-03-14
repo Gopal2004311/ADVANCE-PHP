@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookStore>
+    <book id="1">
+        <bookid>
+            101
+        </bookid>
+        <bookname>
+            mrutunjay
+        </bookname>
+        <bookPrice>
+            200
+        </bookPrice>
+    </book>
+    <book id="2">
+        <bookid>
+            102
+        </bookid>
+        <bookname>
+            rich dad poor dad
+        </bookname>
+        <bookPrice>
+            100
+        </bookPrice>
+    </book>
+</bookStore>
