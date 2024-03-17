@@ -1,0 +1,44 @@
+<!-- 2) Write an Ajax program to search the book name according the character typed & display same list
+using array. (UseNew.php) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+</head>
+<body>
+    <div class="content">
+        <div class="heading">
+            <h2>Display suggestions according to typed..</h2>
+        </div>
+        <div class="form-content">
+            <form>
+                <div class="form-element">
+                    <label for="name">book name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter book name here...">
+                </div>
+                <div class="suggestions">
+                    <span id="suggest"></span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const input=document.getElementById("name");
+        const suggest=document.getElementById("suggest");
+        const display=()=>{
+            let http=new XMLHttpRequest();
+            http.onreadystatechange=()=>{
+                if(http.readyState==4&&http.status==200)
+                {
+                    suggest.innerHTML=http.responseText;
+                }
+            }
+            http.open("GET",`Q2_searchBook.php?book=${input.value}`,true);
+            http.send();
+        }
+        input.addEventListener("keyup",display);
+    </script>
+</body>
+</html>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +7,29 @@
     <link rel="stylesheet" href="Q1_validationAjax.css">
     <script src="Q1_validationAjax.js" defer></script>
 </head>
-
 <body>
-    <div class="form-box">
-        <div id="valid">
-            <span id="success"></span>
+    <div class="content">
+        <div class="form-heading">
+            <h1>Ajax form validation</h1>
         </div>
-        <div class="heading">
-            <h2>Ajax Validation</h2>
-        </div>
-        <div class="for-content">
-            <form>
+        <div class="form-content">
+            <form name="myForm">
                 <div class="form-element">
-                    <label for="username">Username:</label>
-                    <input type="text" name="username" id="username">
-                    <span id="userError"></span>
+                    <label for="user">Username:</label>
+                    <input type="text" name="user" id="user" placeholder="Enter username..">
                 </div>
                 <div class="form-element">
                     <label for="password">Password:</label>
-                    <input type="password" name="password" id="password">
-                    <span id="passError"></span>
+                    <input type="password" name="password" id="password" placeholder="Enter password..">
                 </div>
                 <div class="form-element">
-                    <button value="Submit" name="submit" id="submit">Submit</button>
+                    <input type="submit" value="submit" name="submit" id="submit" class="submit" disabled>
                 </div>
             </form>
+            <div class="hidden" id="hidden">
+                <span id="error"></span>
+            </div>
         </div>
     </div>
 </body>
-
 </html>

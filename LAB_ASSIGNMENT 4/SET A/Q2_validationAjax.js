@@ -4,12 +4,17 @@ const validate = () => {
     console.log(document.getElementById("username").value);
     var xml = new XMLHttpRequest();
     xml.onreadystatechange = () => {
+        let submit=document.getElementById("submit");
         if (xml.readyState == 4 && xml.status == 200) {
             error.innerHTML = xml.responseText;
             if (xml.responseText === "valid username!") {
-                document.getElementById("submit").disabled = false;
+                submit.disabled = false;
+                error.style.color="green";
+                submit.classList.replace("disabled","enabled")
             } else {
                 document.getElementById("submit").disabled = true;
+                submit.classList.replace("enabled","disabled")
+                error.style.color="red";
             }
         }
     }

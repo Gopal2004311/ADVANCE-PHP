@@ -1,0 +1,45 @@
+<!---3) Write a AJAX program to display the following output to search your favourite tutorial from 
+“tutorial.php”file.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+</head>
+<body>
+    <div class="content">
+        <div class="heading">
+            <h2>Search your favourite tutorials:</h2>
+        </div>
+        <div class="form-content">
+            <form>
+                <label for="name">Course name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter course name...">
+                <br>
+                <button id="click">submit</button>
+            </form>
+        </div>
+        <div id="output"></div>
+    </div>
+    <script>
+        const tutorial=document.getElementById("name");
+        const output=document.getElementById("output");
+        const display=(event)=>{
+            event.preventDefault();
+            let http=new XMLHttpRequest();
+            http.onreadystatechange=(e)=>{
+                e.preventDefault();
+                if(http.readyState==4&&http.status==200)
+                {
+                    output.innerHTML=http.responseText;
+                }
+            }
+            http.open("GET",`Q3_displayTutorialAjax.php?name=${tutorial.value}`,true);
+            http.send();
+        }
+        document.getElementById("click").addEventListener("click",display);
+    </script>
+</body>
+</html>

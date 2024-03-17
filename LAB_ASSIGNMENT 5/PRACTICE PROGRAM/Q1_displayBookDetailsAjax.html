@@ -1,0 +1,34 @@
+<!-- 1) Write an Ajax program to display list of book stored in an array on clicking ok button. 
+(ConsiderBook_List.php) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+</head>
+<body>
+    <h2>Display book details on click button..</h2>
+            <form>
+                <input type="submit" value="submit" name="submit" id="submit1">
+            </form>
+    <div id="output"></div>
+    <script>
+        const submit=document.getElementById("submit1");
+        const output=document.getElementById("output");
+        const display=(event)=>{
+            event.preventDefault();
+            let http=new XMLHttpRequest();
+            http.onreadystatechange=()=>{
+                if(http.readyState==4&&http.status==200)
+                {
+                    output.innerHTML=http.responseText;
+                }
+            }
+            http.open("GET",`Q1_displayBookDetailsAjax.php`,true);
+            http.send();
+        }
+        submit.addEventListener("click",display);
+    </script>
+</body>
+</html>

@@ -1,16 +1,13 @@
 <?php 
-
 error_reporting(0);
-$name=$_POST['input'];
-echo$name;
-$result=array();
+$name=$_GET['input'];
 $suggestion=array("Rakesh","Rohan","virat","gopal","anand","akshada","bharat","bhagyesh");
-for($i=0;$i<count($suggestion);$i++)
-{
-    if(stristr($name,substr(strtoupper($suggestion[$i]),0,strlen($suggestion[$i]))))
-     {
-        $result.=$suggestion[$i];
-     }
-}
-
-print_r($result);
+if(!empty($name))
+{foreach ($suggestion as $value) {
+   $up=strtoupper($value);
+   $sub=substr($up,0,strlen($name));
+   if(strcmp($sub,$name)==0)
+   {
+      echo$value." ";
+   }
+}}

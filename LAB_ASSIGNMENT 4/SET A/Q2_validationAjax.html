@@ -9,19 +9,29 @@ Username is too short’. If value entered is appropriate the print ‘Valid use
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="Q2_validationAjax.js" defer></script>
+    <link rel="stylesheet" href="Q2_validationAjax.css">
 </head>
 
 <body>
+    <div class="content">
+        <div class="heading">
     <h1>Ajax form validation!!</h1>
+    </div>
+    <div class="form-content">
     <form method="POST">
+        <div class="form-element">
         <label for="username">Enter username:</label>
-        <input type="text" name="name" id="username"><br>
-        <br>
-        <span id="error"></span>
-        <br>
-        <br>
-        <input type="submit" value="submit" id="submit" disabled>
+        <input type="text" name="name" id="username">
+        </div>
+        <div class="error">
+            <span id="error"></span>
+        </div>
+        <div class="form-element">
+        <input type="submit" value="submit" id="submit" class="disabled" disabled>
+        </div>
     </form>
+    </div>
+    </div>
 </body>
 
 </html>

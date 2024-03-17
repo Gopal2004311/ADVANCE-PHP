@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <book>
+        <title>rich dad poor dad</title>
+        <author>gems deif</author>
+        <year>1998</year>
+        <price>350</price>
+    </book>
+    <book>
+        <title>power of subconsius mind</title>
+        <author>williom watt</author>
+        <year>1989</year>
+        <price>330</price>
+    </book>
+    <book>
+        <title>chanakya niti</title>
+        <author>ashok shrivastav</author>
+        <year>1990</year>
+        <price>300</price>
+    </book>
+    <book>
+        <title>arthshastra</title>
+        <author>Acharya chanakya</author>
+        <year>250BC</year>
+        <price>400</price>
+    </book>
+    <book>
+        <title>ashok samrat</title>
+        <author>narayan sharma</author>
+        <year>2001</year>
+        <price>290</price>
+    </book>
+    <book>
+        <title>chatrapati shivaji</title>
+        <author>vishvas tambe</author>
+        <year>1995</year>
+        <price>250</price>
+    </book>
+</root>

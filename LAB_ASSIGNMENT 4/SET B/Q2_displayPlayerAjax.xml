@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <player>
+        <name>Rohit Sharma</name>
+        <country>India</country>
+        <wicket>200</wicket>
+        <run>300</run>
+    </player>
+    <player>
+        <name>Virat Kohli</name>
+        <country>India</country>
+        <wicket>100</wicket>
+        <run>200</run>
+    </player>
+    <player>
+        <name>Ravindra Jadeja</name>
+        <country>India</country>
+        <wicket>50</wicket>
+        <run>150</run>
+    </player>
+    <player>
+        <name>Sachin Tendulkar</name>
+        <country>India</country>
+        <wicket>300</wicket>
+        <run>500</run>
+    </player>
+    <player>
+        <name>Sunil Gavaskar</name>
+        <country>India</country>
+        <wicket>150</wicket>
+        <run>400</run>
+    </player>
+    <player>
+        <name>Kapil Deo</name>
+        <country>India</country>
+        <wicket>500</wicket>
+        <run>600</run>
+    </player>
+    <player>
+        <name>Mahendrasingh Dhoni</name>
+        <country>India</country>
+        <wicket>450</wicket>
+        <run>500</run>
+    </player>
+</root>

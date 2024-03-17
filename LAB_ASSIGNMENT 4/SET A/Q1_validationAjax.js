@@ -1,30 +1,49 @@
-const btn = document.getElementById("submit");
-const validate = () => {
-    let username = document.getElementById("username");
-    let password = document.getElementById("password");
-    // let userError = document.getElementById("userError");
-    // let passError = document.getElementById("passError");
-    // let valid = document.getElementById("valid");
-    // let success = document.getElementById("success");
-    let xml = new XMLHttpRequest();
-    xml.onreadystatechange = (e) => {
-        if (xml.readyState == 4 && xml.status == 200) {
-            e.preventDefault();
-            console.log(xml.responseText);
-            // if (xml.responseText == "invalid") {
-            //     passError.innerHTML = "*please enter valid password*";
-            //     password.style.border = "1px solid red";
-            // } else if (xml.responseText == "invalid") {
-            //     userError.innerHTML = "*please enter valid username*"
-            //     username.style.border = "1px solid red";
-            // } else if (xml.responseText === "valid") {
-            //     valid.classList.add("valid");
-            //     success.classList.add("success");
-            //     success.innerHTML = "Registration successful!!";
-            // }
+const submit = document.getElementById("submit");
+const username = document.getElementById("user");
+const password = document.getElementById("password");
+const span = document.getElementById("error");
+const hidden = document.getElementById("hidden");
+const validate = (event) => {
+    event.preventDefault();
+    let http = new XMLHttpRequest();
+    console.log("hello Ajax");
+    http.onreadystatechange = (e) => {
+        e.preventDefault();
+        if (http.readyState == 4 && http.status == 200) {
+            console.log("ready state changed");
+            if(http.responseText=="false")
+            {
+            span.style.color = "white";
+            hidden.style.backgroundColor="rgb(223, 83, 83)";
+            span.innerHTML = "Please!check login details..!";
+            }else{
+            span.style.color = "white";
+             hidden.style.backgroundColor="rgb(115, 241, 115)";
+            span.innerHTML = "welcome to ajax script..!";
+            setTimeout(() => {
+                location.href="Q2_validationAjax.html";
+            }, 1000);
+            }
         }
     }
-    xml.open("GET", "Q1_validationAjax.php?user=" + username.value + "&pass=" + password.value, true);
-    xml.send();
+    http.open("GET", `Q1_validationAjax.php?user=${username.value}&pass=${password.value}`, true);
+    http.send();
 }
-btn.addEventListener("click", validate);
+
+const check = () => {
+    let pattern1 = /^[a-zA-Z\s]+$/;
+    let pattern2 = /^[0-9]+$/;
+    if (pattern1.test(username.value) && pattern2.test(password.value)) {
+        submit.classList.replace("submit", "enabled");
+        submit.style.fontsize = "20px";
+        submit.style.color = "white";
+        submit.style.marginTop = "1rem";
+        submit.disabled = false;
+    } else {
+        submit.classList.replace("enabled", "submit");
+        submit.disabled = true;
+    }
+}
+password.addEventListener("keyup", check);
+username.addEventListener("keyup", check);
+submit.addEventListener("click", validate);

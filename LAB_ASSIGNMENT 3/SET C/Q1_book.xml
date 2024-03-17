@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<books>
+  <book id='101'>
+    <code>101</code>
+    <name>Shamachi aai</name>
+    <author>Sane guruji</author>
+    <year>1936</year>
+    <price>250/-</price>
+  </book>
+  <book id='102'>
+    <code>102</code>
+    <name>Mruntunjay</name>
+    <author>Shivaji Savant</author>
+    <year>1967</year>
+    <price>300/-</price>
+  </book>
+  <book id='103'>
+    <code>103</code>
+    <name>Yayati</name>
+    <author>V.S.Khande</author>
+    <year>1959</year>
+    <price>200/-</price>
+  </book>
+  <book id='104'>
+    <code>104</code>
+    <name>Shriman yogi</name>
+    <author>Ranjit desai</author>
+    <year>1968</year>
+    <price>350/-</price>
+  </book>
+  <book id='105'>
+    <code>105</code>
+    <name>Mahanayak</name>
+    <author>Vishwas patil</author>
+    <year>1998</year>
+    <price>270/-</price>
+  </book>
+  <book id='106'>
+    <code>106</code>
+    <name>Chhawa</name>
+    <author>Shivaji savant</author>
+    <year>1980</year>
+    <price>320/-</price>
+  </book>
+  <book id='107'>
+    <code>107</code>
+    <name>Yugandhar</name>
+    <author>Shivaji savant</author>
+    <year>2000</year>
+    <price>330/-</price>
+  </book>
+  <book id='108'>
+    <code>108</code>
+    <name>Fakira</name>
+    <author>Anna bhau sathe</author>
+    <year>1959</year>
+    <price>350/-</price>
+  </book>
+  <book id='109'>
+    <code>109</code>
+    <name>Dnyaneshwari</name>
+    <author>Sant Dhnyaneshwar</author>
+    <year>1290 CE</year>
+    <price>300/-</price>
+  </book>
+  <book id='110'>
+    <code>110</code>
+    <name>Shrimad Bhagwat geeta</name>
+    <author>Maharshi vedvyas</author>
+    <year>5158 Ago</year>
+    <price>300/-</price>
+  </book>
+</books>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <course>
+        <code>101</code>
+        <name>B.B.A.(C.A.)</name>
+        <faculty>computer</faculty>
+        <duration>3 years</duration>
+        <fees>around 30000/- per year</fees>
+        <subject>
+            <list>DBMS</list>
+            <list>RDBMS</list>
+            <list>C programming</list>
+            <list>Mathematics</list>
+            <list>Accounting</list>
+            <list>Networking</list>
+            <list>Data structure</list>
+            <list>PHP</list>
+            <list>C++</list>
+            <list>Java</list>
+            <list>Python</list>
+        </subject>
+    </course>
+    <course>
+        <code>102</code>
+        <name>B.Com</name>
+        <faculty>commerce</faculty>
+        <duration>3 years</duration>
+        <fees>5000/- per year</fees>
+        <subject>
+            <list>Account</list>
+            <list>Cost accounting</list>
+            <list>Economics</list>
+            <list>OCM</list>
+            <list>Secretarial practice</list>
+            <list>Taxetion</list>
+            <list>Cost Management</list>
+            <list>Mathematics</list>
+            <list>Computer fundamental</list>
+        </subject>
+    </course>
+    <course>
+        <code>103</code>
+        <name>B.Sc(computer science)</name>
+        <faculty>computer</faculty>
+        <duration>3 years</duration>
+        <fees>around 35000/- per year</fees>
+        <subject>
+            <list>Math-1</list>
+            <list>Math-2</list>
+            <list>Chemistry-1</list>
+            <list>C programming</list>
+            <list>RDBMS</list>
+            <list>Chemistry-2</list>
+            <list>Python</list>
+        </subject>
+    </course>
+    <course>
+        <code>104</code>
+        <name>B.A.</name>
+        <faculty>Arts</faculty>
+        <duration>3 years</duration>
+        <fees>2000/- per year</fees>
+        <subject>
+            <list>Marathi</list>
+            <list>Hindi</list>
+            <list>English</list>
+            <list>IT</list>
+            <list>Mathematics</list>
+            <list>Political science</list>
+            <list>History</list>
+            <list>Geography</list>
+            <list>Economics</list>
+            <list>Psychology</list>
+        </subject>
+    </course>
+    <course>
+        <code>105</code>
+        <name>M.B.A.</name>
+        <faculty>Management</faculty>
+        <duration>2 years</duration>
+        <fees>around 40000/- per year</fees>
+        <subject>
+            <list>Business Communication</list>
+            <list>Principles of Management</list>
+            <list>Information Technology</list>
+            <list>Mathematics</list>
+        </subject>
+    </course>
+    <course>
+        <code>106</code>
+        <name>B.Sc</name>
+        <faculty>Science</faculty>
+        <duration>3 years</duration>
+        <fees>5000/- per year</fees>
+        <subject>
+            <list>Marathi</list>
+            <list>Information Technology</list>
+            <list>Mathematics-1</list>
+            <list>Mathematics-2</list>
+            <list>Chemistry-1</list>
+            <list>Chemistry-2</list>
+            <list>Physics-1</list>
+            <list>Physics-2</list>
+            <list>Biology-1</list>
+            <list>Biology-2</list>
+        </subject>
+    </course>
+</root>
